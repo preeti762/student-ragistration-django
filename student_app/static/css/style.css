@@ -1,0 +1,158 @@
+/* Basic page styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f5fa;
+    color: #263238;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background-color: #173b67;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.header h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    color: #dce8f7;
+}
+
+/* Main container */
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 35px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.container h1 {
+    text-align: center;
+    color: #173b67;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* Section headings */
+form h3 {
+    color: #173b67;
+    border-bottom: 2px solid #e3eaf3;
+    padding-bottom: 8px;
+    margin: 25px 0 18px;
+}
+
+/* Form fields */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+.from-age{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    background-color: #fff;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Focus effect */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #2463a6;
+    box-shadow: 0 0 0 3px rgba(36, 99, 166, 0.13);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Register button */
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: #2463a6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #173b67;
+}
+
+button[type="submit"]:active {
+    transform: scale(0.99);
+}
+
+/* JavaScript message */
+#message {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#message.success {
+    color: #16753b;
+}
+
+#message.error {
+    color: #c62828;
+}
+
+/* Mobile screen */
+@media (max-width: 600px) {
+    .header h2 {
+        font-size: 22px;
+    }
+
+    .container {
+        width: 94%;
+        padding: 20px 15px;
+        margin: 20px auto;
+    }
+
+    .container h1 {
+        font-size: 24px;
+    }
+}
