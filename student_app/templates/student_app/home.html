@@ -15,12 +15,17 @@
 <body>
 
     <!-- Header -->
-    <header class="header">
-        <div class="header-content">
-            <h2>Student Portal</h2>
-            <p>Create Your Student Profile</p>
-        </div>
-    </header>
+
+<header class="header">
+    <h1>Student Portal</h1>
+    <p>Create Your Student Profile</p>
+
+    <a href="{% url 'admin:index' %}" class="admin-btn">
+        Admin Login
+    </a>
+</header>
+
+
 
     <!-- Main Content -->
     <main class="container">

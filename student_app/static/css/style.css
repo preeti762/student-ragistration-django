@@ -156,3 +156,35 @@ button[type="submit"]:active {
         font-size: 24px;
     }
 }
+
+/* Header */
+.header {
+    position: relative;
+    background-color: #173b67;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
+}
+
+/* Admin button */
+.header .admin-btn {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+
+    display: inline-block;
+    background-color: white;
+    color: #173b67;
+
+    padding: 10px 18px;
+    border-radius: 6px;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+.header .admin-btn:hover {
+    background-color: #dce8f7;
+}

@@ -1,10 +1,12 @@
 // Get the registration form
 const studentForm = document.getElementById("studentForm");
+// console.log('  studentForm ',studentForm)
 
 // Get the message paragraph
 const message = document.getElementById("message");
+console.log(' message ',message)
 
-// Get the profile photo input
+// Get the profile] photo input
 const photoInput = document.getElementById("profile_photo");
 
 // Get the photo preview image
@@ -56,7 +58,7 @@ if (studentForm) {
             .getElementById("dob").value.trim();
 
         const age = document
-            .getElementById("dob").value;)
+            .getElementById("age").value.trim();
 
         const today = new Date().toISOString().split("T")[0];
 
