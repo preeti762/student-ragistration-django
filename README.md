@@ -5,3 +5,4 @@ I am learning Django and Git.
 
 HTML is a Hyper Text Markup Language.
 HTML is the language of the web.
+Working on JavaScript validation feature.
