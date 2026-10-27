@@ -1,3 +1,4 @@
+
 /* Basic page styling */
 * {
     margin: 0;
@@ -14,19 +15,40 @@ body {
 
 /* Header */
 .header {
+    position: relative;
     background-color: #173b67;
     color: white;
     text-align: center;
-    padding: 25px 15px;
+    padding: 15px 15px;
 }
 
-.header h2 {
+.header h1 {
     font-size: 28px;
     margin-bottom: 5px;
 }
 
 .header p {
     color: #dce8f7;
+}
+
+/* Admin Login button */
+.header .admin-btn {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    display: inline-block;
+    background-color: white;
+    color: #173b67;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+.header .admin-btn:hover {
+    background-color: #dce8f7;
 }
 
 /* Main container */
@@ -70,7 +92,8 @@ form h3 {
     font-weight: bold;
     margin-bottom: 7px;
 }
-.from-age{
+
+.from-age {
     display: block;
     font-weight: bold;
     margin-bottom: 7px;
@@ -141,50 +164,75 @@ button[type="submit"]:active {
 }
 
 /* Mobile screen */
-@media (max-width: 600px) {
-    .header h2 {
+
+@media screen and (max-width: 600px) {
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 10px;
+        gap: 5px;
+    }
+
+    .header h1 {
         font-size: 22px;
+        margin-bottom: 0;
+    }
+
+    .header p {
+        font-size: 14px;
+    }
+
+    .header .admin-btn {
+        position: static;
+        margin-top: 5px;
+        padding: 8px 14px;
+        font-size: 13px;
     }
 
     .container {
         width: 94%;
-        padding: 20px 15px;
+        max-width: 700px;
         margin: 20px auto;
+        padding: 20px 15px;
     }
 
     .container h1 {
         font-size: 24px;
     }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
 
-/* Header */
-.header {
-    position: relative;
-    background-color: #173b67;
-    color: white;
-    text-align: center;
-    padding: 15px 15px;
-}
-
-/* Admin button */
+/* Button Hover Animation */
 .header .admin-btn {
-    position: absolute;
-    top: 30px;
-    right: 20px;
-
-    display: inline-block;
-    background-color: white;
-    color: #173b67;
-
-    padding: 10px 18px;
-    border-radius: 6px;
-
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
-    z-index: 1000;
+    transition: all 0.3s ease;
 }
 
 .header .admin-btn:hover {
-    background-color: #dce8f7;
+    transform: scale(1.1);
+    background-color: deeppink;
+    color: white;
+}
+
+.header .admin-btn {
+    transition: all 0.3s ease;
+}
+
+.header .admin-btn:hover {
+    transform: translateY(-4px);
+    background-color: deeppink;
+    color: white;
 }
