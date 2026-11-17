@@ -4,7 +4,6 @@ from .models import Student
 
 def home(request):
     success = False
-
     if request.method == "POST":
         full_name = request.POST.get("full_name", "").strip()
         gender = request.POST.get("gender", "").strip()
